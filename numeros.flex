@@ -16,9 +16,9 @@ fecha = {digito}{2}\/{digito}{2}\/{digito}{4}
 %%
 
 <YYINITIAL>{
-	{nombreCompleto}	{System.out.println("Nombre: "+yytext());}
+	{nombreCompleto}		{System.out.println("Nombre: "+yytext());}
 	{salario}			{System.out.println("Salario: "+yytext());}
 	{fecha}				{System.out.println("Fecha: "+yytext());}
 	{linebreak}			{}
-	.					{}
+	.				{}
 }
