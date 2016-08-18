@@ -31,7 +31,7 @@ numeroImpar = {digito}*(1|3|5|7|9)
 %%
 <YYINITIAL> {
 	{numeroPar}		{numerosPares++;}
-	{numeroImpar}	{numerosImpares++;}
+	{numeroImpar}		{numerosImpares++;}
 	{linebreak}		{/* */}
-	.				{/* */}
+	.			{/* */}
 }
